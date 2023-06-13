@@ -1,0 +1,85 @@
+body{
+    background: linear-gradient(70deg,rgb(255, 255, 255),rgb(134, 135, 134));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation-name: op;
+    animation-duration: 2s;
+    
+
+    
+}
+@keyframes op {
+    from{
+        opacity: 0;
+    }
+
+}
+p{
+    text-align: center;
+    color: grey;
+    font-size: 1.2em;
+    margin: 0 20px;
+
+
+}
+
+img{
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    border-radius: 50%;
+    border: 5px solid rgb(98, 98, 98);
+    box-shadow: 4px 5px 20px black;
+    
+
+
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+    top: 100px;
+    bottom: 24px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 4px 5px 30px black;
+    margin: 25px;
+
+
+}
+.container .link{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+.container .lien{
+    background: rgb(108, 108, 108);
+    width: 200px;
+    height: 50px;
+    font-size: 1.4em;
+    font-style: oblique;
+    overflow: hidden;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 4px 4px 20px black;
+    transition: .3s;
+}
+.container .lien i{
+    margin: 10px;
+}
+.container a{
+    text-decoration: none;
+
+}
+.container .link .lien:hover, .container .link .lien :active{
+    transform: scale(1.1);
+    background: hsl(0, 0%, 55%);
+
+   
+}
